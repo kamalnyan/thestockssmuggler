@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    width: 100%;
+}
 /* navbar starts */
 .navbar {
     display: flex;
@@ -554,11 +556,45 @@ textarea {
 
     .left,
     .right {
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
 }
-
+@media only screen and (max-width: 340px) {
+    .left,
+    .right {
+        width: 60%;
+        padding: 10px;
+    }
+    .cardsabt {
+        width: 200px;
+        height: 50px;
+    }
+    .coursimg{
+    width: 160px;
+    height: 160px;
+    }
+    .course{
+        width: 5%;
+        margin-top: 4%;
+    }
+    .logostyl{
+        display: block;
+        text-align: center;
+    }
+    .logodiv{
+        width: 100%;
+    }
+    .footer{
+        display: block;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 70%;
+    }
+}
 @media only screen and (max-width: 935px) {
     .basiccourses {
         margin: 5px;
