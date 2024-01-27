@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    width: 100%;
+}
 /* navbar starts */
 .navbar {
     display: flex;
@@ -554,11 +556,17 @@ textarea {
 
     .left,
     .right {
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
 }
-
+@media only screen and (max-width: 340px) {
+    .left,
+    .right {
+        width: 60%;
+        padding: 10px;
+    }
+}
 @media only screen and (max-width: 935px) {
     .basiccourses {
         margin: 5px;
