@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar starts */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #071952;
+}
+
+.leftpart {
+    width: 70%;
+    display: flex;
+}
+
+.rightpart {
+    width: 30%;
+    display: flex;
+}
+
+.navlist1 {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    margin-left: 2%;
+    padding: 2% 0% 2% 3%;
+}
+
+.navlist {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    padding: 3.5% 3%;
+}
+
+.hoverlist {
+    font-family: 'Inter', sans-serif;
+}
+
+.hoverlist:hover {
+    color: greenyellow;
+}
+.menu-button {
+    padding: 10px 15px;
+    background-color:chocolate; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+  }
+  .dropdown {
+    position: relative;
+    opacity: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* Navbar ends */
+/* telegram cards starts */
+.telegramcard {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(telegram\ background.jpg);
+    background-size: cover;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.779);
+}
+
+.telegramcarddiv {
+    margin: 10.5% 25%;
+    padding: 4%;
+    backdrop-filter: blur(2px);
+    box-shadow: inset 0 0 10px #05C7F2;
+    clip-path: polygon(0% 40px, 40px 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%);
+}
+
+.margintele {
+    margin: 4%;
+}
+
+.padtele {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 1.5%;
+    border-radius: 4%;
+}
+
+.head {
+    font-family: 'Unbounded', sans-serif;
+}
+
+.para {
+    font-family: 'Poiret One', sans-serif;
+}
+
+.padtele:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.245);
+}
+
+/* telegram cards ends */
+/* vdo starts */
+
+.vdo {
+    text-align: center;
+    background-color: black;
+}
+
+.txtt {
+    height: 30%;
+    color: white;
+    background-color: black;
+    padding: 3% 4.5% 2% 4.5%;
+}
+
+.vdoh1 {
+    font-size: 6em;
+}
+
+.vdopara {
+    font-size: 1.5em;
+}
+
+.video {
+    height: 70%;
+    width: 50%; 
+    margin: 0 auto;
+    background-color: black;
+}
+
+.vdos {
+    border-radius: 8px;
+    width: 100%; 
+    height: 50%;
+    padding: 4% 2% 3% 2%;
+    box-shadow: inset 0 0 10px #05C7F2;
+    clip-path: polygon(0% 40px, 40px 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%);
+}
+
+/* vdo ends */
+/* about starts */
+.about {
+    background-color: #f9f6eed7;
+    text-align: center;
+    width: 100%;
+}
+
+.maincontainer {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 8.5% 10% 8.5% 10%;
+    padding: 0%;
+}
+
+.a1strow,
+.a2ndrow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.cardsabt {
+    display: flex;
+    margin: 0 3%;
+    padding: 2% 1.5%;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    flex-direction: row;
+}
+
+.logoicon {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.abthead {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.para{
+    margin-top: 3%;
+}
+.abtpara {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+/* about end */
+/* animation start */
+.anim {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Adjust this value for fade in up, right, or left */
+    transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.anim.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* animation end */
+/* Responsive */
+@media only screen and (max-width: 1120px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftpart,
+    .rightpart {
+        width: 100%;
+    }
+
+    .navlist1,
+    .navlist {
+        padding: 2% 0;
+    }
+
+    .telegramcarddiv {
+        margin: 10% 5%;
+    }
+
+    .maincontainer {
+        margin: 8.5% 5% 8.5% 5%;
+    }
+
+    .a1strow,
+    .a2ndrow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardsabt {
+        margin: 0 0 20px 0;
+    }
+    .leftpart{
+        opacity: 0;
+    }
+    .rightpart {
+        opacity: 0;
+    }
+    .dropdown{
+        opacity: 1;
+        margin-top: 2.5%;
+    }
+    .navbar{
+        height: 80px;
+    }
+}
+
+/* responsiveness end */
+/* courser start */
+.custom-cursor {
+    position: fixed;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 200ms ease;
+    /* Added transition property for smoother movement */
+    transition-duration: 1s;
+    transition: 200ms;
+}
+
+.custom-cursor.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* courser end */
+/* Courses  start*/
+.courses {
+    padding: 30px;
+    text-align: center;
+    color: aliceblue;
+    background-color: #f9f6eed7;
+    background-size: cover;
+}
+
+.head2 {
+    color: burlywood;
+    background-color: #071952;
+}
+
+.headpara {
+    color: burlywood;
+}
+
+.basiccourses {
+    display: flex;
+    margin: 100px;
+}
+
+.course {
+    width: 50%;
+}
+
+.course1 {
+    width: 310px;
+    height: 380px;
+    background-color:#071952;
+    padding: 50px 10px;
+    margin-left: 25%;
+    border-radius: 15px;
+}
+
+.courseh3 {
+    margin-bottom: 4%;
+}
+
+.coursepara {
+    margin-bottom: 4%;
+}
+
+.courseimg {
+    margin-bottom: 4%;
+    width: 210px;
+    height: 230px;
+}
+.clascoursesparastyle{
+    display: flex;
+    margin-top: 2%;
+}
+.coursimg{
+    width: 240px;
+    height: 200px;
+}
+.headpara{
+    color: #2D9596;
+    margin-top: 9%;
+    font-size: 1.5em;
+}
+.x{
+    width: 50%;
+}
+.textdec{
+    text-decoration: line-through;
+    white-space: pre;
+}
+.fontc{
+    font-family: 'Kite One', sans-serif;
+}
+/* Butoon start */
+.button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
+.button-86::after,
+.button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+
+.button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+}
+
+.button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+.cbtn {
+    text-decoration: none;
+}
+
+/* button end */
+/* courses end */
+/* Tell us start */
+.tell {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.txtarea {
+    resize: none;
+    padding: 5px;
+}
+
+.marginn {
+    margin-left: 34%;
+    margin-top: 5%;
+}
+textarea {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+/* tell us end */
+/* footer start */
+.footer {
+    color: white;
+    background-color: #071952;
+    display: flex;
+    text-align: center;
+}
+
+.left {
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+}
+
+.right {
+    width: 50%;
+    padding: 30px;
+}
+.logostyl{
+    display: flex;
+}
+.logodiv{
+    width: 20%;
+}
+.h1div{
+    width: 80%;
+}
+.h1footer{
+    margin-top: 6%;
+}
+.margin1 {
+    margin-top: 4%;
+}
+
+.margin1 a {
+    margin-right: 2%;
+
+}
+
+.contact {
+    width: 35px;
+    height: 35px;
+}
+
+.logo1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.cntop{
+    margin-top: 2%;
+}
+/* footer end */
+/* responsivenes start */
+@media only screen and (max-width: 1035px) {
+    .basiccourses {
+        margin: 10px;
+    }
+
+    .course1 {
+        max-width: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 935px) {
+    .basiccourses {
+        margin: 5px;
+        font-size: small;
+    }
+
+    .course1 {
+        width: 150px;
+        height: 225px;
+        padding: 50px 10px;
+        margin-left: 25%;
+    }
+
+    .courseimg {
+        margin-bottom: 4%;
+        width: 100px;
+        height: 130px;
+    }
+    .txtt,
+    .vdos {
+        width: 90%; 
+        max-width: none; 
+        margin: 0 auto;
+    }
+    .button-86 {
+        width: 60px;
+        height: 20px;
+        margin-left: 16%;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .basiccourses {
+        display: block;
+        margin-left: 12%
+    }
+
+    .course1 {
+        margin-top: 9%;
+        padding: 50px 10px 70px 10px;
+    }
+    .clascoursesparastyle{
+        display: block;
+        text-align: center;
+    }
+    .x{
+        width: 100%;
+    }
+    .footer{
+        padding: 5%;
+    }
+    .marginn{
+        margin-left: 38%;
+    }
+    .video{
+        width: 70%;
+    }
+    .vdoh1 {
+        font-size: 0.8em;
+    }
+    .vdopara{
+       font-size: 0.9em;
+    }
+    .h1footer{
+        margin-left: 7%;
+        font-size: larger;
+        margin-top: 14%;
+    }
+    .logo1{
+        width: 40x;
+        height: 90px;
+    }
+
+}
+@media only screen and (max-width: 612px) {
+    textarea {
+        width: 50%; 
+        height: 100px; 
+    }
+
+    .vdoh1 {
+        font-size: 3em;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .dropdown{
+        margin-top: 2.9%;
+    }
+
+}
+.fontsh1{
+    font-family: 'Kite One', sans-serif;
+    color: rgba(255, 166, 0, 0.814);
+}
+
+.fontspara{
+    font-family: 'Poiret One', sans-serif;
+}
