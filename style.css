@@ -2,84 +2,98 @@
     margin: 0;
     padding: 0;
 }
+body{
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
 
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: gray;
+    --accent-color-dark: #1d69a3;
+}
 /* navbar starts */
-.navbar {
-    display: flex;
-    position: sticky;
+nav {
+    background-color:#071952 ;
+    box-shadow: 0 0 4px black;
+    position: fixed;
     top: 0;
-    z-index: 100;
-    background-color: #071952;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    font-family: "Roboto", sans-serif;
 }
 
-.leftpart {
-    width: 70%;
-    display: flex;
+.main-nav {
+    justify-content: space-between;
+    padding-block: 8px;
 }
 
-.rightpart {
-    width: 30%;
-    display: flex;
+.company-logo img {
+    width: 100px;
 }
 
-.navlist1 {
-    text-decoration: none;
+.nav-links ul {
+    gap: 16px;
+}
+.nav-links ul a {
     color: white;
-    font-size: larger;
-    margin-left: 2%;
-    padding: 2% 0% 2% 3%;
+}
+.hover-link {
+    cursor: pointer;
 }
 
-.navlist {
-    text-decoration: none;
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: orange;
+}
+.search-bar {
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button {
+    background-color: var(--accent-color);
     color: white;
-    font-size: larger;
-    padding: 3.5% 3%;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
 }
 
-.hoverlist {
-    font-family: 'Inter', sans-serif;
+.search-button:hover {
+    background-color: var(--accent-color-dark);
 }
-
-.hoverlist:hover {
-    color: greenyellow;
-}
-.menu-button {
-    padding: 10px 15px;
-    background-color:chocolate; /* Green background color */
-    color: white; /* White text color */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Cursor on hover */
-  }
-  .dropdown {
-    position: relative;
-    opacity: 0;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
 /* Navbar ends */
 /* telegram cards starts */
 .telegramcard {
@@ -554,11 +568,51 @@ textarea {
 
     .left,
     .right {
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
 }
-
+@media only screen and (max-width: 340px) {
+    .left,
+    .right {
+        width: 60%;
+        padding: 10px;
+    }
+    .cardsabt {
+        width: 200px;
+        height: 50px;
+    }
+    .coursimg{
+    width: 160px;
+    height: 160px;
+    }
+    .course{
+        width: 5%;
+        margin-top: 4%;
+    }
+    .logostyl{
+        display: block;
+        text-align: center;
+    }
+    .logodiv{
+        width: 100%;
+    }
+    .footer{
+        display: block;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 70%;
+    }
+    .nav-links ul a {
+        font-size:10em;
+    }
+    .nav-links ul {
+        gap: 7px;
+    }
+}
 @media only screen and (max-width: 935px) {
     .basiccourses {
         margin: 5px;
@@ -631,6 +685,9 @@ textarea {
     .logo1{
         width: 40x;
         height: 90px;
+    }
+    .nav-links ul a {
+        font-size: small;
     }
 
 }
